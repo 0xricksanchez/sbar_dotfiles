@@ -1,30 +1,83 @@
-add_newline = false
+[aws]
+symbol = "  "
 
-[character]
-success_symbol = '[ #](bold green)'
-error_symbol = "[ x](bold red)"
-vicmd_symbol = "[ V](bold green)"
+[buf]
+symbol = " "
 
-[git_status]
-disabled = false
+[c]
+symbol = " "
 
-[git_commit]
-commit_hash_length = 7
-tag_disabled = false
-only_detached = false
+[conda]
+symbol = " "
 
-[battery]
-disabled = true
-
-[python]
-disabled = true
-
-[cmake]
-disabled = true
+[dart]
+symbol = " "
 
 [directory]
-read_only = "(read only)"
+read_only = " "
 
-[git_metrics]
-disabled = false
-format = '([+$added]($added_style)) ([-$deleted]($deleted_style)) '
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "

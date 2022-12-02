@@ -15,13 +15,13 @@
 # environment variables. Some entries may override variables
 # set by alacritty itself.
 #env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  #TERM: alacritty
+# TERM variable
+#
+# This value is used to set the `$TERM` environment variable for
+# each instance of Alacritty. If it is not present, alacritty will
+# check the local terminfo database and use `alacritty` if it is
+# available, otherwise `xterm-256color` is used.
+#TERM: alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -48,7 +48,6 @@ window:
   padding:
     x: 3
     y: 5
-
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
@@ -62,9 +61,7 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   decorations: buttonless
-
   opacity: 0.98
-
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -78,29 +75,27 @@ window:
 
   # Window title
   title: Alacritty
-
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
   # Window class (Linux/BSD only):
   #class:
-    # Application instance name
-    #instance: Alacritty
-    # General application class
-    #general: Alacritty
-
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark`
-  # and `light`. Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+  # Application instance name
+  #instance: Alacritty
+  # General application class
+  #general: Alacritty
+# GTK theme variant (Linux/BSD only)
+#
+# Override the variant of the GTK theme. Commonly supported values are `dark`
+# and `light`. Set this to `None` to use the default theme variant.
+#gtk_theme_variant: None
 
 #scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  #history: 10000
+# Maximum number of lines in the scrollback buffer.
+# Specifying '0' will disable scrolling.
+#history: 10000
 
-  # Scrolling distance multiplier.
-  #multiplier: 3
+# Scrolling distance multiplier.
+#multiplier: 3
 
 # Font configuration
 font:
@@ -113,10 +108,8 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: Liga SFMono Nerd Font
-
     # The `style` can be specified to pick a specific face.
     #style: Regular
-
   # Bold font face
   bold:
     # Font family
@@ -124,21 +117,17 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Liga SFMono Nerd Font
-
     # The `style` can be specified to pick a specific face.
     style: Bold
-
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Liga SFMono Nerd Font
-
     # The `style` can be specified to pick a specific face.
     style: Italic
-
   # Bold italic font face
   bold_italic:
     # Font family
@@ -146,13 +135,10 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Liga SFMono Nerd Font
-
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
-
   # Point size
   size: 14.0
-
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
@@ -172,16 +158,10 @@ font:
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
   #use_thin_strokes: true
-
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
-
 color_schemes:
-
-
-
   latte: &latte
-
     # Default colors
     primary:
       background: '#EFF1F5' # base
@@ -189,7 +169,6 @@ color_schemes:
       # Bright and dim foreground colors
       dim_foreground: '#4C4F69' # text
       bright_foreground: '#4C4F69' # text
-
     # Cursor colors
     cursor:
       text: '#EFF1F5' # base
@@ -197,7 +176,6 @@ color_schemes:
     vi_mode_cursor:
       text: '#EFF1F5' # base
       cursor: '#7287FD' # lavender
-
     # Search colors
     search:
       matches:
@@ -209,7 +187,6 @@ color_schemes:
       footer_bar:
         foreground: '#EFF1F5' # base
         background: '#6C6F85' # subtext0
-
     # Keyboard regex hints
     hints:
       start:
@@ -218,53 +195,44 @@ color_schemes:
       end:
         foreground: '#EFF1F5' # base
         background: '#6C6F85' # subtext0
-
     # Selection colors
     selection:
       text: '#EFF1F5' # base
       background: '#DC8A78' # rosewater
-
     # Normal colors
     normal:
-      black:   '#5C5F77' # subtext1
-      red:     '#D20F39' # red
-      green:   '#40A02B' # green
-      yellow:  '#DF8E1D' # yellow
-      blue:    '#1E66F5' # blue
+      black: '#5C5F77' # subtext1
+      red: '#D20F39' # red
+      green: '#40A02B' # green
+      yellow: '#DF8E1D' # yellow
+      blue: '#1E66F5' # blue
       magenta: '#EA76CB' # pink
-      cyan:    '#179299' # teal
-      white:   '#ACB0BE' # surface2
-
+      cyan: '#179299' # teal
+      white: '#ACB0BE' # surface2
     # Bright colors
     bright:
-      black:   '#6C6F85' # subtext0
-      red:     '#D20F39' # red
-      green:   '#40A02B' # green
-      yellow:  '#DF8E1D' # yellow
-      blue:    '#1E66F5' # blue
+      black: '#6C6F85' # subtext0
+      red: '#D20F39' # red
+      green: '#40A02B' # green
+      yellow: '#DF8E1D' # yellow
+      blue: '#1E66F5' # blue
       magenta: '#EA76CB' # pink
-      cyan:    '#179299' # teal
-      white:   '#BCC0CC' # surface1
-
+      cyan: '#179299' # teal
+      white: '#BCC0CC' # surface1
     # Dim colors
     dim:
-      black:   '#5C5F77' # subtext1
-      red:     '#D20F39' # red
-      green:   '#40A02B' # green
-      yellow:  '#DF8E1D' # yellow
-      blue:    '#1E66F5' # blue
+      black: '#5C5F77' # subtext1
+      red: '#D20F39' # red
+      green: '#40A02B' # green
+      yellow: '#DF8E1D' # yellow
+      blue: '#1E66F5' # blue
       magenta: '#EA76CB' # pink
-      cyan:    '#179299' # teal
-      white:   '#ACB0BE' # surface2
-
+      cyan: '#179299' # teal
+      white: '#ACB0BE' # surface2
     indexed_colors:
-      - { index: 16, color: '#FE640B' }
-      - { index: 17, color: '#DC8A78' }
-
-
-
+      - {index: 16, color: '#FE640B'}
+      - {index: 17, color: '#DC8A78'}
   frappe: &frappe
-
     # Default colors
     primary:
       background: '#303446' # base
@@ -272,7 +240,6 @@ color_schemes:
       # Bright and dim foreground colors
       dim_foreground: '#C6D0F5' # text
       bright_foreground: '#C6D0F5' # text
-
     # Cursor colors
     cursor:
       text: '#303446' # base
@@ -280,7 +247,6 @@ color_schemes:
     vi_mode_cursor:
       text: '#303446' # base
       cursor: '#BABBF1' # lavender
-
     # Search colors
     search:
       matches:
@@ -292,7 +258,6 @@ color_schemes:
       footer_bar:
         foreground: '#303446' # base
         background: '#A5ADCE' # subtext0
-
     # Keyboard regex hints
     hints:
       start:
@@ -301,53 +266,44 @@ color_schemes:
       end:
         foreground: '#303446' # base
         background: '#A5ADCE' # subtext0
-
     # Selection colors
     selection:
       text: '#303446' # base
       background: '#F2D5CF' # rosewater
-
     # Normal colors
     normal:
-      black:   '#51576D' # surface1
-      red:     '#E78284' # red
-      green:   '#A6D189' # green
-      yellow:  '#E5C890' # yellow
-      blue:    '#8CAAEE' # blue
+      black: '#51576D' # surface1
+      red: '#E78284' # red
+      green: '#A6D189' # green
+      yellow: '#E5C890' # yellow
+      blue: '#8CAAEE' # blue
       magenta: '#F4B8E4' # pink
-      cyan:    '#81C8BE' # teal
-      white:   '#B5BFE2' # subtext1
-
+      cyan: '#81C8BE' # teal
+      white: '#B5BFE2' # subtext1
     # Bright colors
     bright:
-      black:   '#626880' # surface2
-      red:     '#E78284' # red
-      green:   '#A6D189' # green
-      yellow:  '#E5C890' # yellow
-      blue:    '#8CAAEE' # blue
+      black: '#626880' # surface2
+      red: '#E78284' # red
+      green: '#A6D189' # green
+      yellow: '#E5C890' # yellow
+      blue: '#8CAAEE' # blue
       magenta: '#F4B8E4' # pink
-      cyan:    '#81C8BE' # teal
-      white:   '#A5ADCE' # subtext0
-
+      cyan: '#81C8BE' # teal
+      white: '#A5ADCE' # subtext0
     # Dim colors
     dim:
-      black:   '#51576D' # surface1
-      red:     '#E78284' # red
-      green:   '#A6D189' # green
-      yellow:  '#E5C890' # yellow
-      blue:    '#8CAAEE' # blue
+      black: '#51576D' # surface1
+      red: '#E78284' # red
+      green: '#A6D189' # green
+      yellow: '#E5C890' # yellow
+      blue: '#8CAAEE' # blue
       magenta: '#F4B8E4' # pink
-      cyan:    '#81C8BE' # teal
-      white:   '#B5BFE2' # subtext1
-
+      cyan: '#81C8BE' # teal
+      white: '#B5BFE2' # subtext1
     indexed_colors:
-      - { index: 16, color: '#EF9F76' }
-      - { index: 17, color: '#F2D5CF' }
-
-
-
+      - {index: 16, color: '#EF9F76'}
+      - {index: 17, color: '#F2D5CF'}
   macchiato: &macchiato
-
     # Default colors
     primary:
       background: '#24273A' # base
@@ -355,7 +311,6 @@ color_schemes:
       # Bright and dim foreground colors
       dim_foreground: '#CAD3F5' # text
       bright_foreground: '#CAD3F5' # text
-
     # Cursor colors
     cursor:
       text: '#24273A' # base
@@ -363,7 +318,6 @@ color_schemes:
     vi_mode_cursor:
       text: '#24273A' # base
       cursor: '#B7BDF8' # lavender
-
     # Search colors
     search:
       matches:
@@ -375,7 +329,6 @@ color_schemes:
       footer_bar:
         foreground: '#24273A' # base
         background: '#A5ADCB' # subtext0
-
     # Keyboard regex hints
     hints:
       start:
@@ -384,53 +337,44 @@ color_schemes:
       end:
         foreground: '#24273A' # base
         background: '#A5ADCB' # subtext0
-
     # Selection colors
     selection:
       text: '#24273A' # base
       background: '#F4DBD6' # rosewater
-
     # Normal colors
     normal:
-      black:   '#494D64' # surface1
-      red:     '#ED8796' # red
-      green:   '#A6DA95' # green
-      yellow:  '#EED49F' # yellow
-      blue:    '#8AADF4' # blue
+      black: '#494D64' # surface1
+      red: '#ED8796' # red
+      green: '#A6DA95' # green
+      yellow: '#EED49F' # yellow
+      blue: '#8AADF4' # blue
       magenta: '#F5BDE6' # pink
-      cyan:    '#8BD5CA' # teal
-      white:   '#B8C0E0' # subtext1
-
+      cyan: '#8BD5CA' # teal
+      white: '#B8C0E0' # subtext1
     # Bright colors
     bright:
-      black:   '#5B6078' # surface2
-      red:     '#ED8796' # red
-      green:   '#A6DA95' # green
-      yellow:  '#EED49F' # yellow
-      blue:    '#8AADF4' # blue
+      black: '#5B6078' # surface2
+      red: '#ED8796' # red
+      green: '#A6DA95' # green
+      yellow: '#EED49F' # yellow
+      blue: '#8AADF4' # blue
       magenta: '#F5BDE6' # pink
-      cyan:    '#8BD5CA' # teal
-      white:   '#A5ADCB' # subtext0
-
+      cyan: '#8BD5CA' # teal
+      white: '#A5ADCB' # subtext0
     # Dim colors
     dim:
-      black:   '#494D64' # surface1
-      red:     '#ED8796' # red
-      green:   '#A6DA95' # green
-      yellow:  '#EED49F' # yellow
-      blue:    '#8AADF4' # blue
+      black: '#494D64' # surface1
+      red: '#ED8796' # red
+      green: '#A6DA95' # green
+      yellow: '#EED49F' # yellow
+      blue: '#8AADF4' # blue
       magenta: '#F5BDE6' # pink
-      cyan:    '#8BD5CA' # teal
-      white:   '#B8C0E0' # subtext1
-
+      cyan: '#8BD5CA' # teal
+      white: '#B8C0E0' # subtext1
     indexed_colors:
-      - { index: 16, color: '#F5A97F' }
-      - { index: 17, color: '#F4DBD6' }
-
-
-
+      - {index: 16, color: '#F5A97F'}
+      - {index: 17, color: '#F4DBD6'}
   mocha: &mocha
-
     # Default colors
     primary:
       background: '#1E1E2E' # base
@@ -438,7 +382,6 @@ color_schemes:
       # Bright and dim foreground colors
       dim_foreground: '#CDD6F4' # text
       bright_foreground: '#CDD6F4' # text
-
     # Cursor colors
     cursor:
       text: '#1E1E2E' # base
@@ -446,7 +389,6 @@ color_schemes:
     vi_mode_cursor:
       text: '#1E1E2E' # base
       cursor: '#B4BEFE' # lavender
-
     # Search colors
     search:
       matches:
@@ -458,7 +400,6 @@ color_schemes:
       footer_bar:
         foreground: '#1E1E2E' # base
         background: '#A6ADC8' # subtext0
-
     # Keyboard regex hints
     hints:
       start:
@@ -467,53 +408,44 @@ color_schemes:
       end:
         foreground: '#1E1E2E' # base
         background: '#A6ADC8' # subtext0
-
     # Selection colors
     selection:
       text: '#1E1E2E' # base
       background: '#F5E0DC' # rosewater
-
     # Normal colors
     normal:
-      black:   '#45475A' # surface1
-      red:     '#F38BA8' # red
-      green:   '#A6E3A1' # green
-      yellow:  '#F9E2AF' # yellow
-      blue:    '#89B4FA' # blue
+      black: '#45475A' # surface1
+      red: '#F38BA8' # red
+      green: '#A6E3A1' # green
+      yellow: '#F9E2AF' # yellow
+      blue: '#89B4FA' # blue
       magenta: '#F5C2E7' # pink
-      cyan:    '#94E2D5' # teal
-      white:   '#BAC2DE' # subtext1
-
+      cyan: '#94E2D5' # teal
+      white: '#BAC2DE' # subtext1
     # Bright colors
     bright:
-      black:   '#585B70' # surface2
-      red:     '#F38BA8' # red
-      green:   '#A6E3A1' # green
-      yellow:  '#F9E2AF' # yellow
-      blue:    '#89B4FA' # blue
+      black: '#585B70' # surface2
+      red: '#F38BA8' # red
+      green: '#A6E3A1' # green
+      yellow: '#F9E2AF' # yellow
+      blue: '#89B4FA' # blue
       magenta: '#F5C2E7' # pink
-      cyan:    '#94E2D5' # teal
-      white:   '#A6ADC8' # subtext0
-
+      cyan: '#94E2D5' # teal
+      white: '#A6ADC8' # subtext0
     # Dim colors
     dim:
-      black:   '#45475A' # surface1
-      red:     '#F38BA8' # red
-      green:   '#A6E3A1' # green
-      yellow:  '#F9E2AF' # yellow
-      blue:    '#89B4FA' # blue
+      black: '#45475A' # surface1
+      red: '#F38BA8' # red
+      green: '#A6E3A1' # green
+      yellow: '#F9E2AF' # yellow
+      blue: '#89B4FA' # blue
       magenta: '#F5C2E7' # pink
-      cyan:    '#94E2D5' # teal
-      white:   '#BAC2DE' # subtext1
-
+      cyan: '#94E2D5' # teal
+      white: '#BAC2DE' # subtext1
     indexed_colors:
-      - { index: 16, color: '#FAB387' }
-      - { index: 17, color: '#F5E0DC' }
-
-
-
+      - {index: 16, color: '#FAB387'}
+      - {index: 17, color: '#F5E0DC'}
 colors: *macchiato
-
 cursor:
   # Cursor style
   style:
@@ -524,7 +456,6 @@ cursor:
     #   - _ Underline
     #   - | Beam
     shape: Block
-
     # Cursor blinking state
     #
     # Values for `blinking`:
@@ -533,26 +464,24 @@ cursor:
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
     blinking: Off
+    # Vi mode cursor style
+    #
+    # If the vi mode cursor style is `None` or not specified, it will fall back to
+    # the style of the active value of the normal cursor.
+    #
+    # See `cursor.style` for available options.
+    #vi_mode_style: None
 
-  # Vi mode cursor style
-  #
-  # If the vi mode cursor style is `None` or not specified, it will fall back to
-  # the style of the active value of the normal cursor.
-  #
-  # See `cursor.style` for available options.
-  #vi_mode_style: None
+    # Cursor blinking interval in milliseconds.
+    #blink_interval: 750
 
-  # Cursor blinking interval in milliseconds.
-  #blink_interval: 750
+    # If this is `true`, the cursor will be rendered as a hollow box when the
+    # window is not focused.
+    #unfocused_hollow: true
 
-  # If this is `true`, the cursor will be rendered as a hollow box when the
-  # window is not focused.
-  #unfocused_hollow: true
-
-  # Thickness of the cursor relative to the cell width as floating point number
-  # from `0.0` to `1.0`.
-  #thickness: 0.15
-
+    # Thickness of the cursor relative to the cell width as floating point number
+    # from `0.0` to `1.0`.
+    #thickness: 0.15
 # Live config reload (changes require restart)
 #live_config_reload: true
 
@@ -576,10 +505,8 @@ cursor:
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 working_directory: None
-
 # Send ESC (\x1b) before characters when alt is pressed.
 alt_send_esc: false
-
 mouse:
   # Click settings
   #
@@ -591,50 +518,49 @@ mouse:
 
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true
-
 # Regex hints
 #
 # Terminal hints can be used to find text in the visible part of the terminal
 # and pipe it to other applications.
 #hints:
-  # Keys used for the hint labels.
-  #alphabet: "jfkdls;ahgurieowpq"
+# Keys used for the hint labels.
+#alphabet: "jfkdls;ahgurieowpq"
 
-  # List with all available hints
-  #
-  # Each hint must have a `regex` and either an `action` or a `command` field.
-  # The fields `mouse`, `binding` and `post_processing` are optional.
-  #
-  # The fields `command`, `binding.key`, `binding.mods`, `binding.mode` and
-  # `mouse.mods` accept the same values as they do in the `key_bindings` section.
-  #
-  # The `mouse.enabled` field controls if the hint should be underlined while
-  # the mouse with all `mouse.mods` keys held or the vi mode cursor is above it.
-  #
-  # If the `post_processing` field is set to `true`, heuristics will be used to
-  # shorten the match if there are characters likely not to be part of the hint
-  # (e.g. a trailing `.`). This is most useful for URIs.
-  #
-  # Values for `action`:
-  #   - Copy
-  #       Copy the hint's text to the clipboard.
-  #   - Paste
-  #       Paste the hint's text to the terminal or search.
-  #   - Select
-  #       Select the hint's text.
-  #   - MoveViModeCursor
-  #       Move the vi mode cursor to the beginning of the hint.
-  #enabled:
-  # - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
-  #           [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^??`]+"
-  #   command: xdg-open
-  #   post_processing: true
-  #   mouse:
-  #     enabled: true
-  #     mods: None
-  #   binding:
-  #     key: U
-  #     mods: Control|Shift
+# List with all available hints
+#
+# Each hint must have a `regex` and either an `action` or a `command` field.
+# The fields `mouse`, `binding` and `post_processing` are optional.
+#
+# The fields `command`, `binding.key`, `binding.mods`, `binding.mode` and
+# `mouse.mods` accept the same values as they do in the `key_bindings` section.
+#
+# The `mouse.enabled` field controls if the hint should be underlined while
+# the mouse with all `mouse.mods` keys held or the vi mode cursor is above it.
+#
+# If the `post_processing` field is set to `true`, heuristics will be used to
+# shorten the match if there are characters likely not to be part of the hint
+# (e.g. a trailing `.`). This is most useful for URIs.
+#
+# Values for `action`:
+#   - Copy
+#       Copy the hint's text to the clipboard.
+#   - Paste
+#       Paste the hint's text to the terminal or search.
+#   - Select
+#       Select the hint's text.
+#   - MoveViModeCursor
+#       Move the vi mode cursor to the beginning of the hint.
+#enabled:
+# - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
+#           [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^??`]+"
+#   command: xdg-open
+#   post_processing: true
+#   mouse:
+#     enabled: true
+#     mods: None
+#   binding:
+#     key: U
+#     mods: Control|Shift
 
 # Mouse bindings
 #
@@ -970,30 +896,30 @@ key_bindings:
   #- { key: H,              mods: Command,                    action: Hide                  }
   #- { key: H,              mods: Command|Alt,                action: HideOtherApplications }
   #- { key: M,              mods: Command,                    action: Minimize              }
-  - { key: Q,              mods: Command,                    action: Quit                  }
-  - { key: W,              mods: Command,                    action: Quit                  }
-  - { key: N,              mods: Command,                    action: CreateNewWindow      }
+  - {key: Q, mods: Command, action: Quit}
+  - {key: W, mods: Command, action: Quit}
+  - {key: N, mods: Command, action: CreateNewWindow,}
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
 #debug:
-  # Display the time it takes to redraw each frame.
-  #render_timer: false
+# Display the time it takes to redraw each frame.
+#render_timer: false
 
-  # Keep the log file after quitting Alacritty.
-  #persistent_logging: false
+# Keep the log file after quitting Alacritty.
+#persistent_logging: false
 
-  # Log level
-  #
-  # Values for `log_level`:
-  #   - Off
-  #   - Error
-  #   - Warn
-  #   - Info
-  #   - Debug
-  #   - Trace
-  #log_level: Warn
+# Log level
+#
+# Values for `log_level`:
+#   - Off
+#   - Error
+#   - Warn
+#   - Info
+#   - Debug
+#   - Trace
+#log_level: Warn
 
-  # Print all received window events.
-  #print_events: false
+# Print all received window events.
+#print_events: false
